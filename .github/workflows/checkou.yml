@@ -1,0 +1,12 @@
+name: hello-checkout
+on: [push]
+jobs:
+  hello-checkout:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "hello checkout"
+      - uses: actions/checkout@v2
+      - run: |
+          ls -al
+          cd .github/workflows/
+          ls -al
