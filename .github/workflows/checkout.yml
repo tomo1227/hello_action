@@ -1,5 +1,5 @@
 name: hello-checkout
-on: [push]
+on: [pull-request]
 jobs:
   hello-checkout:
     runs-on: ubuntu-latest
