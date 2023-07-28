@@ -1,8 +1,7 @@
-name: hello-push
+name: hello-action
 on: [push]
 jobs:
   say-hello:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "hello"
-
+      - run: echo "Hello Github Action!"
